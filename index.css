@@ -1,0 +1,264 @@
+/* Style the navbar */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 2%;
+}
+
+header .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0%;
+  font-size: 0.8rem;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  color: #cad467;
+  text-decoration: line-through;
+}
+
+.aboutMe {
+  margin: 10% 25%;
+  font-size: 0.9rem;
+}
+
+.aboutMe .myName {
+  font-weight: bold;
+}
+
+.aboutMe .primaryColor {
+  color: #cad467;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Sarabun', sans-serif;
+}
+
+.aboutMe .myInfomation {
+  color: #999999;
+  font-size: 0.8rem;
+  line-height: 200%;
+  margin: 5% 0;
+}
+
+.aboutMe .myInfomation p {
+  margin-top: 3%;
+}
+
+.aboutMe .education {
+  color: black;
+  font-size: 0.9rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Sarabun', sans-serif;
+}
+
+.aboutMe .Myimg {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.aboutMe .Myimg img {
+  height: auto;
+  width: 90%;
+}
+
+.contactForm {
+  margin: 10% 30%;
+}
+
+.contactForm h2 {
+  color: #cad467;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.contactForm .form-label {
+  font-size: 0.8rem;
+  margin-top: 3%;
+}
+
+.contactForm .form-control {
+  font-size: 0.8rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.contactForm .button {
+  margin: 5% 40%;
+}
+
+.contactForm .button .form-control {
+  font-weight: bold;
+  padding: 12% 0;
+}
+
+.contactForm .button:hover {
+  color: #cad467;
+  text-decoration: line-through;
+}
+
+html {
+  font-size: 16px;
+  min-width: 500px;
+}
+
+@media only screen and (max-width: 680px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+.masthead {
+  background-image: url("https://pro2-bar-s3-cdn-cf5.myportfolio.com/f3784884e27ac7670733563b07e6fd6f/6b6c49ab-551d-4dfb-8a20-baf3b1c368d0_rwc_225x218x1557x1034x4096.jpg?h=f3a0316a8f8126253cf7f35e721c51a1");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-pack: center;
+  background-attachment: fixed;
+  height: 630px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.masthead h1 {
+  color: #e4f348;
+  font-family: 'Monoton', cursive;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80px;
+  margin-bottom: 61px;
+  margin-top: 0px;
+}
+
+.masthead p {
+  color: #e4f348;
+  text-align: center;
+  text-decoration: line-through;
+}
+
+.masthead .mastheadArrowContainer {
+  cursor: pointer;
+  height: 40px;
+  width: 60px;
+  bottom: 25px;
+  left: calc(50% - 30px);
+  margin: 40px auto 0px;
+}
+
+.masthead .mastheadArrowContainer .mastheadArrow {
+  border: 1px solid;
+  border-bottom-color: #cad467;
+  border-right-color: #cad467;
+  -webkit-transform: rotate(45deg) translateY(-15px) translateX(5px);
+          transform: rotate(45deg) translateY(-15px) translateX(5px);
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  bottom: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+.mastheadContents {
+  position: fixed;
+  z-index: 1;
+}
+
+#wrap {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  background: white;
+  position: relative;
+  z-index: 10;
+}
+
+/* Main Section */
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5%;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Lexend Mega', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.contents {
+  overflow: hidden;
+  position: relative;
+  width: 30%;
+  height: 240px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 680px) {
+  .contents {
+    margin: 3px;
+    width: 100%;
+  }
+}
+
+.contents img {
+  width: 100%;
+  height: 100%;
+}
+
+.contents .caption {
+  text-align: center;
+  font-size: 1.2rem;
+  display: table-cell;
+  vertical-align: middle;
+  color: black;
+}
+
+.contents .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: #cad467;
+  display: table;
+}
+
+.contents .mask:hover {
+  opacity: 0.9;
+}
+/*# sourceMappingURL=index.css.map */

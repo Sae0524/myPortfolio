@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sae Mikado</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lexend+Mega&family=Quicksand:wght@400;700&family=Work+Sans&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+  <script>
+    $(document).ready(function(){
+      var offTopElementString = "-" + $("#wrap").offset().top;
+       var offTopElementNumber = parseInt(offTopElementString);
+      $(".mastheadArrowContainer").on("click",function(){
+       $("#wrap").css("margin-top", offTopElementNumber);
+
+       $(".mastheadContents").fadeOut();
+      });
+
+      $(window).scroll(function(){ 
+        $('.mastheadContents').css("opacity", 1- $(window).scrollTop() / 500) 
+      }) 
+    })
+  </script>
+</head>
+<body>
+  <!-- Hidden header -->
+  <div class="masthead">
+    <div class="mastheadContents">
+      <h1>SAE</h1>
+      <p>P  O  R  T  F  O  L  I  O</p>
+      <div class="mastheadArrowContainer">
+        <div class="mastheadArrow">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main header -->
+<div id="wrap">
+    <header>
+      <div class="logo">
+        <a href="index.html">SAE MIKADO</a>
+      </div>
+      <div>
+        <!-- Navigation bar -->
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Work</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="hobby.html">Hobby</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/_524s/?hl=ja"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+          </ul>
+        </nav>
+      <!-- </div> -->
+      </div>   
+    </header>
+    <!-- Main section -->
+    <main>
+      <div class="contents">
+        <a href="https://sae0524.github.io/ArtGallery/">
+          <img src="work1.png" alt="">
+          <div class="mask">
+            <p class="caption">Web Design</p>
+          </div>
+        </a>
+      </div>
+      <div class="contents">
+        <a href="https://sae0524.github.io/Shopping/">
+          <img src="work2.png">
+          <div class="mask">
+            <p class="caption">Web Design</p>
+          </div>
+        </a>
+      </div>
+      <div class="contents">
+        <a href="https://sae0524.github.io/travelSite/">
+          <img src="work3.png">
+          <div class="mask">
+            <p class="caption">Web Design</p>
+          </div>
+        </a>
+      </div>
+      <div class="contents">
+        <a href="http://the3csense.ca/">
+
+          <img src="work4.png">
+          <div class="mask">
+            <p class="caption">Website</p>
+          </div>
+        </a>
+      </div>
+      <div class="contents">
+        <a href="https://ai-works.myshopify.com/">
+          <img src="work5.png">
+          <div class="mask">
+            <p class="caption">Website</p>
+          </div>
+        </a>
+      </div>
+      <div class="contents">
+        <a href="https://sae0524.github.io/ToDolist/">
+          <img src="work6.png">
+          <div class="mask">
+            <p class="caption">To Do List</p>
+          </div>
+        </a>
+      </div>
+      <div class="contents">
+        <a href="https://sae0524.github.io/WeatherApp/">
+          <img src="work7.png">
+          <div class="mask">
+            <p class="caption">Weather App</p>
+          </div>
+        </a>
+      </div>
+      <div class="contents">
+        <a href="#">
+          <img src="https://pro2-bar-s3-cdn-cf.myportfolio.com/f3784884e27ac7670733563b07e6fd6f/8b5cfb0f-e4b0-494d-ac03-6ab65530be96_rw_1920.jpg?h=2a97ee988b5ec570667afe07d2d07047">
+          <div class="mask">
+            <p class="caption">Next Work</p>
+          </div>
+        </a>
+      </div>
+      <div class="contents">
+        <a href="#">
+          <img src="https://pro2-bar-s3-cdn-cf.myportfolio.com/f3784884e27ac7670733563b07e6fd6f/8b5cfb0f-e4b0-494d-ac03-6ab65530be96_rw_1920.jpg?h=2a97ee988b5ec570667afe07d2d07047">
+          <div class="mask">
+            <p class="caption">Next Work</p>
+          </div>
+        </a>
+      </div>
+    </main>
+</div>
+</body>
+</html>

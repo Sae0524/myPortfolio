@@ -1,0 +1,42 @@
+.aboutMe {
+  margin: 10% 25%;
+  font-size: 0.9rem;
+
+  .myName {
+    font-weight: bold;
+  }
+
+  .primaryColor {
+    color: $primary-color;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Sarabun', sans-serif;
+    }
+
+  .myInfomation {
+    color: #999999;
+    font-size: 0.8rem;
+    line-height: 200%;
+    margin: 5% 0;
+
+    p {
+      margin-top: 3%;
+    }
+  }
+
+  .education {
+    color: black;
+    font-size: 0.9rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Sarabun', sans-serif;
+  }
+
+  .Myimg {
+    text-align: center;
+    margin-top: 15%;
+
+    img {
+      height: auto;
+      width: 90%;
+    }
+  }
+}
